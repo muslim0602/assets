@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,56 @@
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
-<body>
 
-<script src="js/main.js"></script>
+<body>
+  <div class="container">
+    <div class="site-container">
+      <div class="site-top">
+        <h1 class="site-top-heading">Account settings</h1>
+        <img class="cancel" src="img/cancel.png" alt="site-top-cancel-img" width="20" height="20"
+          srcset="img/cancel.png 1x, img/cancel@2x.png 2x">
+      </div>
+      <div class="form">
+        <form>
+          <img class="form-img" src="img/avatar.jpg" alt="man img" width="100" height="100"
+          srcset="img/avatar.jpg 1x, img/avatar@2x.jpg 2x">
+          <ul class="form-list">
+            <li class="form-list-item">
+              <h2 class="form-list-item-heading">USERNAME</h2>
+              <input class="username input" type="text" placeholder="Enter your username" required>
+            </li>
+            <div class="fullname">
+              <li class="form-list-item">
+                <h2 class="form-list-item-heading">FISRT NAME</h2>
+                <input class="fisrtname fio" type="text" placeholder="Enter your first name" required>
+              </li>
+              <li class="form-list-item">
+                <h2 class="form-list-item-heading">LAST NAME</h2>
+                <input class="lastname fio" type="text" placeholder="Enter your last name" required>
+              </li>
+            </div>
+            <li class="form-list-item">
+              <h2 class="form-list-item-heading">EMAIL</h2>
+              <input class="email input" type="email" placeholder="Enter your email" required>
+
+            </li>
+            <li class="form-list-item">
+              <h2 class="form-list-item-heading">BIO</h2>
+              <p class="bio-tex">Tell us about yourself</p>
+              <textarea class="yourself-text" name="biography"></textarea>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div class="site-bottom">
+      <span class="site-bottom-info">
+        <span class="bottom-text">Cancel</span>
+        <span class="bottom-text">Save</span>
+      </span>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
